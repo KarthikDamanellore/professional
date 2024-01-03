@@ -1,0 +1,110 @@
+.navBarMainContainer {
+  background-color: var(--navbarBackgroundColor);
+}
+
+.navBarInsideContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 80px 12px 83px;
+}
+.navbarLogoLeft {
+  max-width: 140px;
+  max-height: 29px;
+}
+
+.imageWidth {
+  width: 100%;
+  height: 100%;
+}
+
+.navbarMenuItemsRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.navBarMenuItem {
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.subscribeBtnStyles {
+  max-width: 179px;
+  max-height: 56px;
+  font-family: 'SenRegular', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 16px 48px;
+  background-color: var(--white);
+}
+
+.hambergerIconImgBlock {
+  display: none;
+}
+
+/* Media Query start */
+/* View  1440px start  */
+@media screen and (max-width: 1440px) {
+}
+/* View  1440px end  */
+
+/* View 1270px start */
+@media screen and (max-width: 1279px) {
+  .navBarInsideContainer {
+    padding: 17px 80px;
+  }
+}
+/* View 1270px end */
+/* View  1023px start  */
+@media screen and (max-width: 1023px) {
+  .navBarInsideContainer {
+    padding: 18px 40px;
+  }
+}
+/* View  1023px end  */
+@media screen and (max-width: 867px) {
+  .navBarMenuItem {
+    display: none;
+  }
+  .hambergerIconImgBlock {
+    display: block;
+    width: 24px;
+    height: 100%;
+    object-fit: contain;
+  }
+  .subscribeBtnStyles {
+    display: none;
+  }
+  .navBarInsideContainer {
+    padding: 18px 32px;
+  }
+  .navbarLogoLeft {
+    max-width: 92px;
+    max-height: 28px;
+  }
+}
+/* View  550px start  */
+@media screen and (max-width: 550px) {
+  .navBarInsideContainer {
+    padding: 18px 24px;
+  }
+  .navbarMenuItemsRight {
+    display: none;
+  }
+}
+/* View  550px end  */
+/* View  320px start  */
+@media screen and (max-width: 320px) {
+  .navBarInsideContainer {
+    padding: 18px 24px;
+  }
+}
+/* View  320px end  */
+/* Media Query End */
